@@ -1,0 +1,73 @@
+
+h1{
+    color: white; filter: drop-shadow(1px 1px 1px black);
+}
+
+
+   
+
+.box-gray{
+    background-color: gray; opacity: 0.5;
+}
+.box-pink{
+    background-color: pink;
+}
+
+p.box-gray{
+    background-color: aqua;
+}
+
+.square{
+    background-color: gray;
+    height: 300px;
+    width: 600px;
+    }
+.square.bg-green{
+    background-color: green;
+}
+
+.square2{
+    height: 300px;
+    width: 600px;
+    background-image: url(ben.jpg);
+
+}
+
+.square2 p{ 
+    color: white;
+    background-color:black; opacity: 0.5;
+    position: relative; 
+    top: 180px; 
+    
+}
+
+.links .button{
+    text-decoration: none;
+    font-size: 20px;
+    color: brown;
+    transition: 2s;
+}
+.links .button span{
+    font-weight: 700;
+}
+.links .button:hover{
+    color: black;
+}
+#uniq-box{
+    background-color: aqua;
+}
+
+.avatar img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    transition: 2s;
+    filter: grayscale(100%);
+}
+.avatar img:hover {
+    filter: grayscale(0);
+    transform:scale(1.5) rotate(360deg);
+    
+  }
+
+  
