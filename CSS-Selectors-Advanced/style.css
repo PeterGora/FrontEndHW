@@ -44,7 +44,7 @@ p.box-gray{
 .links .button{
     text-decoration: none;
     font-size: 20px;
-    color: brown;
+    color: red;
     transition: 2s;
 }
 .links .button span{
@@ -70,4 +70,16 @@ p.box-gray{
     
   }
 
+  .to-do li{
+    font-size: 20px; last
+  }
+
+  .to-do li:first-child, .to-do li:last-child{
+      font-weight:  700;
+  }
+
+  .to-do li:nth-child(even){
+      background: gray;
+  }
+  
   
