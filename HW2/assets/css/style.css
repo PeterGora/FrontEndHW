@@ -1,0 +1,79 @@
+.background-rgba {
+    height: 30vh;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.sec1 {
+    height: 100vh;
+    background-image: url("../img/utah.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 200px;
+}
+
+.sec1 li:first-child,
+:last-child {
+    font-weight: bold;
+}
+
+.sec2 {
+    height: 100vh;
+    background-image: url("../img/mountain.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Nerko One', cursive;
+    font-weight: 200px;
+}
+
+.sec3 {
+    height: 100vh;
+    background-image: url("../img/utah.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700px;
+    background-position: center center;
+
+}
+
+
+
+.background-position {
+    height: 100vh;
+    background-image: url("../img/cat.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.background-big-img {
+    height: 100vh;
+    background-image: url("../img/mountain.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    /* all of these cna be written using: 
+    background:url("../img/mountain.jpg") no repeat center cover fixed */
+}
+
+.background-big-my {
+    height: 100vh;
+    background-image: url("../img/utah.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.background-suitcase {
+    height: 100vh;
+    background-image: url("../img/waliski.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #e8fbc6;
+}
