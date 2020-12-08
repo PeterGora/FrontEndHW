@@ -1,8 +1,3 @@
-.background-rgba {
-    height: 30vh;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
 .sec1 {
     height: 100vh;
     background-image: url("../img/utah.jpg");
@@ -10,12 +5,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'JetBrains Mono', monospace;
-    font-weight: 200px;
+    font-weight: 700px;
 }
 
 .sec1 li:first-child,
-:last-child {
-    font-weight: bold;
+li:last-child {
+    text-decoration: underline;
 }
 
 .sec2 {
@@ -25,55 +20,28 @@
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Nerko One', cursive;
-    font-weight: 200px;
+    font-weight: 400;
+    color: #e8fbc6;
+}
+
+
+.sec2 li:last-child:hover {
+    color: #e8fbc6;
+
 }
 
 .sec3 {
     height: 100vh;
-    background-image: url("../img/utah.jpg");
+    background-image: url("../img/dive.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Roboto', sans-serif;
-    font-weight: 700px;
-    background-position: center center;
+    font-weight: 900;
+    font: larger;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100vh;
 
-}
 
-
-
-.background-position {
-    height: 100vh;
-    background-image: url("../img/cat.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.background-big-img {
-    height: 100vh;
-    background-image: url("../img/mountain.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    /* all of these cna be written using: 
-    background:url("../img/mountain.jpg") no repeat center cover fixed */
-}
-
-.background-big-my {
-    height: 100vh;
-    background-image: url("../img/utah.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-.background-suitcase {
-    height: 100vh;
-    background-image: url("../img/waliski.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-color: #e8fbc6;
 }
