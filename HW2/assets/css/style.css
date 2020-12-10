@@ -25,7 +25,7 @@ li:last-child {
 }
 
 
-.sec2 li:last-child:hover {
+.sec2 ul li:nth-child(even) a:hover {
     color: #e8fbc6;
 
 }
