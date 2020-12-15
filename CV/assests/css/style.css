@@ -1,0 +1,582 @@
+/*********************************
+* GLOBAL SETTINGS
+**********************************/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: rgb(49, 118, 179);
+    color: #ffffff;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.btn {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 12px 32px;
+    background-color: #ff4c60;
+    transition: 0.9s;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    color: #ff4c60;
+}
+
+header.default {
+    background-image: url("../img/dots.svg");
+    background-repeat: no-repeat;
+    padding: 20px 0 0 20px;
+    margin: 0 0 40px 0;
+}
+
+header.default h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/*********************************
+* Intro SETTINGS
+**********************************/
+
+.intro {
+    margin: 180px 0 180px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.intro .avatar {
+    height: 204px;
+    width: 182px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    margin: 0 0 20px 0;
+}
+
+.intro h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+.intro h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+}
+
+.intro .social {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+    display: flex;
+}
+
+.intro .social li {
+    margin-left: 20px;
+}
+
+.intro .social li:first-child {
+    margin-left: 0px;
+}
+
+
+.intro .social li a {
+    color: #ffffff;
+    font-size: 30px;
+    transition: 0.3s;
+    display: block;
+}
+
+.intro .social li a:hover {
+    color: #ff4c60;
+    transform: scale(1.2);
+    transform: rotate(180deg);
+
+}
+
+.intro .mouse {
+    display: block;
+    width: 20px;
+    height: 26px;
+    background-color: #ff4c60;
+    border-radius: 16px;
+    border: 2px solid #ffffff;
+    position: absolute;
+
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.intro .mouse .wheel {
+    background-color: #ffffff;
+    height: 4px;
+    width: 4px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    animation: bounced 1s linear infinite;
+}
+
+@keyframes bounced {
+    0% {
+        top: 16px;
+    }
+
+    25% {
+        top: 10px;
+    }
+
+    50% {
+        top: 16px;
+    }
+
+    100% {
+        top: 5px;
+    }
+}
+
+@media(max-width:700px) {
+    .intro h1 {
+        font-size: 26px;
+    }
+
+    .intro h2 {
+        font-size: 14px;
+    }
+}
+
+
+/*********************************
+* Skillset
+**********************************/
+
+
+
+.date .og .description .skilist {
+    display: flex;
+    list-style-type: none;
+    width: 75%;
+    flex-wrap: wrap;
+    background-color: #7a89b3;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px 0 rgba(72, 69, 112, 0.6);
+    position: relative;
+    transition: 0.2s;
+}
+
+
+
+.date .og .description {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.skilist li {
+    width: calc(75% / 4);
+    font-size: 32px;
+    margin: 15px 10px 10px 30px;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.skilist li:hover {
+    color: #ff4c60;
+    transform: translateY(-5px);
+
+}
+
+@media(max-width:1000px) {
+    .date .og .description .skilist {
+        width: 100%;
+    }
+}
+
+/*********************************
+* About me Section
+**********************************/
+
+.about-me {
+    margin: 0 0 80px 0;
+}
+
+.about-me .counters {
+    list-style-type: none;
+    margin: 0 -15px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-me .counters li {
+    width: 25%;
+    padding: 0 15px;
+    display: flex;
+}
+
+.about-me .counters i {
+    font-size: 30px;
+    color: #dedeea;
+    flex: 0 0 50px;
+}
+
+.about-me .counters .details .number {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.about-me .counters .details p {
+    margin: 0
+}
+
+.about-me .about-me-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px 30px -15px;
+
+}
+
+.about-me .about-me-box .avatar {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.about-me .about-me-box .data {
+    width: 75%;
+    padding: 0 15px;
+}
+
+.about-me .about-me-box .data .bg {
+    padding: 30px;
+    background-color: #7a89b3;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px 0 rgba(72, 69, 112, 0.6);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-me .about-me-box .data .bg .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 30px 15px 0;
+    border-color: transparent #7a89b3 transparent transparent;
+    position: absolute;
+    left: -30px;
+}
+
+.about-me-box .data .bg .description {
+    width: 50%;
+    padding: 0 15px;
+}
+
+.about-me-box .data .bg .description p {
+    margin: 0 0 30px 0;
+    line-height: 1.5;
+}
+
+
+.about-me-box .data .bg .skills {
+    width: 50%;
+    padding: 0 15px;
+}
+
+.about-me .skills .skill .name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 8px 0;
+
+}
+
+.about-me .skills .skill .name span:first-of-type {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.about-me .skills .skill .name span:last-of-type {
+    font-size: 14px;
+}
+
+.about-me .skills .skill .progress-bar {
+    height: 7px;
+    border-radius: 15px;
+    background-color: #ffffff;
+}
+
+.about-me .skills .skill .progress-bar .bar {
+    height: 7px;
+    border-radius: 15px;
+    background-color: #b8a712;
+}
+
+.about-me .skills .skill {
+    margin-bottom: 10px;
+}
+
+
+@media(max-width:1000px) {
+    .about-me .about-me-box .avatar {
+        width: 100%;
+        margin: 0 0 40px 0;
+        text-align: center;
+    }
+
+    .about-me .about-me-box .data {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .about-me .about-me-box .data .bg .triangle {
+        left: 50%;
+        top: -30px;
+        transform: translateX(-50%) rotate(90deg);
+
+    }
+
+    .about-me .counters li {
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 30px 0;
+    }
+
+    .about-me .counters li i {
+        flex: 0 0 40%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 5% 0 0;
+    }
+
+    .about-me .counters li .details {
+        flex: 0 0 60%;
+    }
+}
+
+@media(max-width:600px) {
+    .about-me-box .data .bg .description {
+        width: 100%;
+        order: 2;
+        text-align: center;
+
+    }
+
+    .about-me-box .data .bg .skills {
+        width: 100%;
+        order: 1;
+        margin: 0 0 40px 0;
+    }
+
+    .about-me .counters li {
+        width: 100%;
+    }
+
+
+}
+
+/*********************************
+* Services
+**********************************/
+
+.services {
+    padding: 50px 0;
+    margin: 10px 0 80px 0;
+}
+
+.services-boxes {
+    display: flex;
+    margin: 0x -15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services-boxes .box {
+    width: calc(100% / 3);
+    padding: 0 15px;
+}
+
+.services-boxes .box .bg {
+    background-color: #ff4c60;
+    box-shadow: rgba(249, 123, 139, 0.5) 0px 5px 15px 0px;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.services-boxes .box .bg:hover {
+    transform: translateY(-10px);
+}
+
+.services-boxes .box .bg img {
+    margin: 0 0 20px 0;
+}
+
+.services-boxes .box .bg .title {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.services-boxes .box .bg .description {
+    margin: 0;
+    line-height: 1.5;
+}
+
+@media(max-width:1000px) {
+    .services-boxes .box {
+        width: 50%;
+        margin: 0 0 40px 0;
+
+    }
+}
+
+@media(max-width:600px) {
+    .services-boxes .box {
+        width: 100%;
+    }
+}
+
+
+/*********************************
+* Experience
+**********************************/
+
+.experience {
+    padding: 70px 0;
+}
+
+.experience .timeline {
+    display: flex;
+    margin: 0 -15px;
+}
+
+.experience .timeline .column {
+    width: 50%;
+    padding: 0 15px;
+
+}
+
+.experience .timeline .column .bg {
+    background-color: #7a89b3;
+    padding: 30px 30px 30px 60px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px 0 rgba(72, 69, 112, 0.6);
+    position: relative;
+    margin:
+}
+
+.experience .timeline .column .bg .line {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    height: calc(100% - 60px);
+    width: 1px;
+    background-color: #ff4c60;
+}
+
+.experience .timeline .column .bg .school {
+    position: relative;
+}
+
+.experience .timeline .column .bg .school i {
+    color: #ff4c60;
+    position: absolute;
+    font-size: 18px;
+    left: -39px;
+    top: 4px;
+}
+
+.experience .timeline .column .bg .work {
+    position: relative;
+}
+
+.experience .timeline .column .bg .work i {
+    color: #ff4c60;
+    position: absolute;
+    font-size: 18px;
+    left: -39px;
+    top: 4px;
+}
+
+
+/*********************************
+* Recent work
+**********************************/
+
+
+/*********************************
+* Navigation
+**********************************/
+
+.navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #7a89b3;
+    padding: 16px 0;
+    border-radius: 0 0 30px 0;
+    box-shadow: #3a4358 0px 2px 2px 2px;
+    text-shadow: 1px 1px 1px #000000;
+    z-index: 122;
+}
+
+.navigation .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation .menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.navigation .menu li {
+    margin: 0 0 0 20px;
+}
+
+.navigation .menu li:first-child {
+    margin: 0;
+}
+
+.navigation .menu li a {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.navigation .menu li a:hover {
+    color: #ff4c60;
+
+}
+
+@media(max-width:1000px) {
+    .navigation {
+        display: none;
+    }
+}
