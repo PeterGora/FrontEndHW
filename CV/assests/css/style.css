@@ -30,11 +30,13 @@ a {
     padding: 12px 32px;
     background-color: #ff4c60;
     transition: 0.9s;
+    margin-top: 20px;
 }
 
 .btn:hover {
     background-color: #ffffff;
     color: #ff4c60;
+    transform: scale(0.7);
 }
 
 header.default {
@@ -471,12 +473,14 @@ header.default h2 {
 .experience .timeline {
     display: flex;
     margin: 0 -15px;
+    flex-wrap: wrap;
 }
 
 .experience .timeline .column {
     width: 50%;
     padding: 0 15px;
 
+    display: flex;
 }
 
 .experience .timeline .column .bg {
@@ -485,7 +489,7 @@ header.default h2 {
     border-radius: 20px;
     box-shadow: 0 5px 20px 0 rgba(72, 69, 112, 0.6);
     position: relative;
-    margin:
+
 }
 
 .experience .timeline .column .bg .line {
@@ -521,11 +525,178 @@ header.default h2 {
     top: 4px;
 }
 
+@media(max-width:1000px) {
+    .experience .timeline .column {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .experience .timeline .column .bg .line2 {
+        position: absolute;
+        left: 30px;
+        top: -70px;
+        height: calc(100% - 60px);
+        width: 1px;
+        background-color: #ff4c60;
+    }
+}
+
+/*********************************
+* pricing plans
+**********************************/
+.pricing {
+    padding: 50px 0;
+    margin: 10px 0 80px 0;
+}
+
+.pricing-boxes {
+    display: flex;
+    margin: 0x -15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pricing-boxes .box {
+    width: calc(100% / 3);
+    padding: 0 15px;
+}
+
+.pricing-boxes .box .bg {
+    background-color: #7a89b3;
+    box-shadow: 0 5px 20px 0 rgba(72, 69, 112, 0.6);
+    border-radius: 20px;
+    padding: 30px 40px;
+    margin: 0;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.pricing-boxes .boxbig .bg .recommended {
+    color: #fff;
+    background: #6c6ce5;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 0;
+    top: 46px;
+    padding: 7px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.pricing-boxes .boxbig {
+    width: calc(100% / 3);
+    padding: 0 15px;
+    position: relative;
+    margin: 0 -15px;
+
+}
+
+.pricing-boxes .boxbig .bg {
+    background-color: #7a89b3;
+    box-shadow: 0 5px 20px 0 rgba(72, 69, 112, 0.6);
+    border-radius: 20px;
+    padding: 55px 30px;
+    margin: 0 15px 0 0;
+    text-align: center;
+    transition: 0.3s;
+    top: -30px;
+    position: absolute;
+
+}
+
+.pricing-boxes .boxbig .bg .price {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+
+.pricing-boxes .boxbig .bg .price em {
+    font-style: normal;
+    font-size: 14px;
+    vertical-align: super;
+    margin-right: 5px;
+}
+
+.pricing-boxes .boxbig .bg .price span {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.pricing-boxes .box .bg .price {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+
+.pricing-boxes .box .bg .price em {
+    font-style: normal;
+    font-size: 14px;
+    vertical-align: super;
+    margin-right: 5px;
+}
+
+.pricing-boxes .box .bg .price span {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.pricing-boxes .box .bg img {
+    margin: 0 0 20px 0;
+}
+
+.pricing-boxes .boxbig .bg img {
+    margin: 0 0 20px 0;
+}
+
+@media(max-width:1000px) {
+    .pricing-boxes .box {
+        width: 50%;
+        margin: 20px 0;
+    }
+
+    .pricing-boxes .boxbig {
+        width: 50%;
+        order: 2;
+        margin: 20px 0;
+    }
+
+    .pricing {
+        margin: 10px 0 380px 0;
+    }
+
+}
+
+@media(max-width:600px) {
+    .pricing-boxes .box {
+        width: 100%;
+    }
+
+    .pricing-boxes .boxbig {
+        width: 100%;
+    }
+}
 
 /*********************************
 * Recent work
 **********************************/
 
+.works .port-boxes {}
+
+.works .port-boxes .box {
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.works .port-boxes .box .bg img {
+    max-width: 100%;
+}
 
 /*********************************
 * Navigation
