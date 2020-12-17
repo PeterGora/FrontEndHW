@@ -752,6 +752,19 @@ header.default h2 {
     z-index: 200;
 }
 
+@media(max-width:1000px) {
+    .latest .newsboxes .box {
+        width: 50%;
+        margin: 20px 0;
+    }
+}
+
+@media(max-width:700px) {
+    .latest .newsboxes .box {
+        width: 100%;
+    }
+}
+
 /*********************************
 * Recent work
 **********************************/
