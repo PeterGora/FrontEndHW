@@ -173,9 +173,11 @@ header.default h2 {
 * Skillset
 **********************************/
 
+.skillseta {
+    padding: 70px 0 0 0;
+}
 
-
-.date .og .description .skilist {
+.skillseta .description .skilist {
     display: flex;
     list-style-type: none;
     width: 75%;
@@ -189,7 +191,7 @@ header.default h2 {
 
 
 
-.date .og .description {
+.skillseta .description {
     display: flex;
     justify-content: flex-end;
 }
@@ -203,12 +205,12 @@ header.default h2 {
 
 .skilist li:hover {
     color: #ff4c60;
-    transform: translateY(-5px);
-
+    /* transform: translateY(-5px); */
+    transform: scale(1, 2 1.2)
 }
 
 @media(max-width:1000px) {
-    .date .og .description .skilist {
+    .skillseta .description .skilist {
         width: 100%;
     }
 }
@@ -219,6 +221,7 @@ header.default h2 {
 
 .about-me {
     margin: 0 0 80px 0;
+    padding: 70px 0 0 0;
 }
 
 .about-me .counters {
@@ -683,19 +686,100 @@ header.default h2 {
 }
 
 /*********************************
+* LatestBlog
+**********************************/
+.latest {
+    margin: 10px 0 80px 0;
+    padding: 60px 0;
+}
+
+.latest .newsboxes {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    justify-content: center;
+}
+
+.latest .newsboxes .box {
+    width: calc(100% / 3);
+    padding: 0 15px;
+
+}
+
+.latest .newsboxes .box .bg {
+    background-color: #7a89b3;
+    border-radius: 20px;
+    text-align: center;
+    padding: 0 0 30px 0;
+    overflow: hidden;
+    transition: 0.3s;
+    position: relative;
+}
+
+.latest .newsboxes .box .bg:hover {
+    transform: translateY(-10px);
+}
+
+
+.latest .newsboxes .box .bg img {
+    width: 100%;
+    height: auto;
+
+}
+
+.latest .newsboxes .box .bg img:hover {
+    scale: 1.1;
+}
+
+.latest .newsboxes .box .bg a {
+    color: #ffffff;
+}
+
+.latest .newsboxes .box .bg a:hover {
+    color: #ff4c60;
+}
+
+.latest .newsboxes .bg .topp {
+    position: absolute;
+    color: #fff;
+    background: #ff4c60;
+    left: 20px;
+    top: 0;
+    padding: 7px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 0 0 15px 15px;
+    z-index: 200;
+}
+
+/*********************************
 * Recent work
 **********************************/
 
-.works .port-boxes {}
+.works {
+    margin: 10px 0 80px 0;
+    padding: 60px 0;
+}
 
-.works .port-boxes .box {
-    width: 25%;
+.works .port-boxes {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -15px;
+    justify-content: left;
+}
+
+.works .port-boxes .box .bg {
+    border-radius: 30px;
+}
+
+.works .port-boxes .box {
+    width: calc(100% / 3);
+
 }
 
 .works .port-boxes .box .bg img {
-    max-width: 100%;
+    width: 100%;
+    height: auto;
 }
 
 /*********************************
@@ -707,7 +791,7 @@ header.default h2 {
     top: 0;
     width: 100%;
     background-color: #7a89b3;
-    padding: 16px 0;
+    padding: 0 0 10px 0;
     border-radius: 0 0 30px 0;
     box-shadow: #3a4358 0px 2px 2px 2px;
     text-shadow: 1px 1px 1px #000000;
@@ -733,6 +817,11 @@ header.default h2 {
 
 .navigation .menu li:first-child {
     margin: 0;
+}
+
+
+.navigation .logo img {
+    padding: 10px 0 0 0;
 }
 
 .navigation .menu li a {
