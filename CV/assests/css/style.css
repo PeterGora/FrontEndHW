@@ -724,6 +724,7 @@ header.default h2 {
 .latest .newsboxes .box .bg img {
     width: 100%;
     height: auto;
+    display: block;
 
 }
 
@@ -733,6 +734,10 @@ header.default h2 {
 
 .latest .newsboxes .box .bg a {
     color: #ffffff;
+    overflow: hidden;
+    display: block;
+
+
 }
 
 .latest .newsboxes .box .bg a:hover {
