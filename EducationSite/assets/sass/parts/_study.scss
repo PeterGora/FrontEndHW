@@ -1,0 +1,83 @@
+.study {
+    background-color: $studyBgColor;
+    padding: 100px 0;
+    transition: 0.4s;
+
+
+    .program {
+        border-radius: 4px;
+        margin: 0 0 20px 0;
+
+        &:hover {
+            transform: translateY(-10px);
+        }
+
+
+
+        .photo {
+
+            position: relative;
+
+            img {
+                border-radius: 4px 4px 0 0;
+
+            }
+
+            .circle {
+                background-color: $primaryColor;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                bottom: -40px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 33;
+
+                i {
+                    color: $secondaryColor;
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .description {
+            background-color: $quaternaryColor;
+            padding: 70px 30px;
+            border-radius: 0px 0px 4px 4px;
+            position: relative;
+            text-align: center;
+
+
+            h2 {
+                margin: 0 0 20px 0;
+                font-size: 22px;
+                font-weight: 700;
+                color: $teriaryColor;
+                font-family: $mainfFontFamily;
+            }
+
+            p {
+                line-height: 1.5;
+                margin: 0;
+
+            }
+
+            .btn {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                white-space: nowrap;
+                bottom: -20px;
+            }
+
+        }
+
+
+
+    }
+
+}

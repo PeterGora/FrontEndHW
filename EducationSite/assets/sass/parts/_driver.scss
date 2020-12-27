@@ -1,0 +1,32 @@
+.driver {
+    background-image: url("../img/driver.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+
+    .container {
+
+        display: flex;
+        min-height: 100vh;
+        padding: 80px 15px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        .intro {
+            color: $driverTextColor;
+            margin: 0 0 20px 0;
+            @include fluid-type(22px, 48px);
+        }
+
+        h1 {
+            font-weight: 700;
+            color: $driverTextColor;
+            @include fluid-type(46px, 90px);
+            margin: 0 0 30px 0;
+
+        }
+    }
+
+}

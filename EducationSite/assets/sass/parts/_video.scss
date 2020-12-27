@@ -1,0 +1,29 @@
+.video {
+    padding: 250px 0;
+    background-image: url("../img/video.jpg");
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media(max-width:600px) {
+        padding: 150px 0;
+
+    }
+
+    a {
+        display: flex;
+        font-size: 30px;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        color: $primaryColor;
+        background-color: $secondaryColor;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+}
