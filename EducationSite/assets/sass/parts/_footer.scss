@@ -3,7 +3,7 @@
     background-image: url(../img/footer-bg.png);
     background-color: $primaryColor;
     background-size: cover;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-attachment: fixed;
 
 
@@ -96,22 +96,26 @@
 
                 .social {
                     list-style-type: none;
+                    padding: 0 0 40px 0;
 
 
                     li {
                         display: inline;
+
+                        a {
+                            text-decoration: none;
+                            color: $quaternaryColor;
+                            align-content: flex-end;
+
+                            :hover {
+                                color: $primaryColor;
+                            }
+                        }
                     }
                 }
             }
 
-            a {
-                text-decoration: none;
-                color: $quaternaryColor;
 
-                :hover {
-                    color: $secondaryColor;
-                }
-            }
 
             i {
                 padding: 10px;

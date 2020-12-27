@@ -29,3 +29,15 @@ $('.owl-carousel').owlCarousel({
 
 
 AOS.init();
+
+
+let scrollUp = document.getElementById("scrollUp");
+window.addEventListener("scroll", function () {
+    // console.log(window.pageYOffset);
+    if (window.pageYOffset > 0) {
+        scrollUp.classList.add("sticky")
+    }
+    else {
+        scrollUp.classList.remove("sticky")
+    }
+})
