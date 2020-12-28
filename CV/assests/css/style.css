@@ -784,20 +784,58 @@ header.default h2 {
     flex-wrap: wrap;
     margin: 0 -15px;
     justify-content: left;
+    transition: .3s;
 }
 
-.works .port-boxes .box .bg {
-    border-radius: 30px;
-}
 
 .works .port-boxes .box {
     width: calc(100% / 3);
+    border-radius: 30px;
+    position: relative;
 
 }
 
-.works .port-boxes .box .bg img {
-    width: 100%;
+.works .port-boxes .box .topg {
+    position: absolute;
+    color: #fff;
+    background: #ff4c60;
+    left: 30px;
+    top: 15px;
+    padding: 7px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 0 0 15px 15px;
+    z-index: 200;
+}
+
+.works .port-boxes .box:hover {
+    transform: scale(0.95);
+    filter: grayscale(100%);
+}
+
+.works .port-boxes .box img {
+    width: 90%;
     height: auto;
+    border-radius: 30px;
+    padding: 15px;
+
+}
+
+.works .btn {
+    width: 13%;
+}
+
+@media(max-width:1000px) {
+    .works .port-boxes .box {
+        width: 50%;
+        margin: 20px 0;
+    }
+}
+
+@media(max-width:700px) {
+    .works .port-boxes .box {
+        width: 100%;
+    }
 }
 
 /*********************************
