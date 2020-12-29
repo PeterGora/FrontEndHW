@@ -1,6 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: $mainfFontFamily;
     color: $mainTextColor;
+    overflow-x: hidden;
 }
 
 h1,

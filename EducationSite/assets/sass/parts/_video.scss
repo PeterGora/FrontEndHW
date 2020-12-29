@@ -24,6 +24,11 @@
         align-items: center;
         justify-content: center;
 
+        &:hover {
+            background-color: $primaryColor;
+            color: $secondaryColor;
+
+        }
     }
 
 }

@@ -17,13 +17,10 @@
 
             .column {
                 width: 25%;
-                height: 100%;
                 color: $quaternaryColor;
                 font-size: 15px;
                 margin: 15px 0;
                 padding: 10px;
-                position: absolute;
-                top: 0;
 
 
                 @media(max-width:900px) {
@@ -59,8 +56,10 @@
                         }
 
                         img {
-                            width: 30%;
+                            float: left;
+                            width: 40px;
                             border-radius: 5px;
+                            margin: 0 6px 0 0;
                         }
 
                         a {
@@ -85,30 +84,44 @@
     }
 
     .bottom {
+        padding: 30px 0;
 
         .container {
 
             display: flex;
             justify-content: space-between;
+            align-items: center;
 
             .row {
-                width: calc(100% / 3);
                 font-size: 12px;
                 color: $quaternaryColor;
 
 
                 .social {
                     list-style-type: none;
-                    padding: 0 0 40px 0;
+                    padding: 0;
+                    margin: 0;
 
 
                     li {
-                        display: inline;
+                        display: inline-block;
 
                         a {
+                            display: flex;
+                            width: 35px;
+                            height: 35px;
+                            justify-content: center;
+                            align-items: center;
                             text-decoration: none;
                             color: $quaternaryColor;
-                            align-content: flex-end;
+                            background-color: $secondaryColor;
+                            border-radius: 50%;
+
+                            i {
+                                color: $quaternaryColor;
+                                font-size: 16px;
+
+                            }
 
                             :hover {
                                 color: $primaryColor;
@@ -120,11 +133,7 @@
 
 
 
-            i {
-                padding: 10px;
-                background-color: $secondaryColor;
-                border-radius: 50%;
-            }
+
 
             img {
                 max-width: 150px;
