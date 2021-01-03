@@ -73,6 +73,10 @@ header.default h2 {
     margin: 0 0 20px 0;
 }
 
+.intro .avatar:hover {
+    filter: grayscale(100%);
+}
+
 .intro h1 {
     font-size: 36px;
     font-weight: 700;
@@ -111,7 +115,7 @@ header.default h2 {
 .intro .social li a:hover {
     color: #ff4c60;
     transform: scale(1.2);
-    transform: rotate(180deg);
+    transform: rotatey(180deg);
 
 }
 
@@ -264,6 +268,11 @@ header.default h2 {
 .about-me .about-me-box .avatar {
     width: 25%;
     padding: 0 15px;
+}
+
+.about-me .about-me-box .avatar img {
+    width: 120px;
+    border-radius: 50%;
 }
 
 .about-me .about-me-box .data {
@@ -574,6 +583,12 @@ header.default h2 {
     transition: 0.3s;
 }
 
+.pricing-boxes .box .bg:hover {
+    filter: drop-shadow(5px 5px 5px #ff4c60);
+
+
+}
+
 .pricing-boxes .boxbig .bg .recommended {
     color: #fff;
     background: #6c6ce5;
@@ -608,6 +623,12 @@ header.default h2 {
     transition: 0.3s;
     top: -30px;
     position: absolute;
+
+}
+
+.pricing-boxes .boxbig .bg:hover {
+    filter: drop-shadow(5px 5px 5px #ff4c60);
+
 
 }
 
@@ -851,7 +872,7 @@ header.default h2 {
     border-radius: 0 0 30px 0;
     box-shadow: #3a4358 0px 2px 2px 2px;
     text-shadow: 1px 1px 1px #000000;
-    z-index: 122;
+    z-index: 202;
 }
 
 .navigation .container {
@@ -891,8 +912,12 @@ header.default h2 {
 
 }
 
-@media(max-width:1000px) {
+@media(max-width:800px) {
     .navigation {
         display: none;
     }
 }
+
+/*********************************
+* Contact form
+**********************************/
