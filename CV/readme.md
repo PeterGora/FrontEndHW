@@ -4,7 +4,7 @@ Portfolio template website created to be used for free.
 #Using:
 html5, sass, css, javascript and RWD.
 
-![Site1](https://github.com/PeterGora/FrontEndHW/blob/master/CV/CV1.png?raw=true)
+![Site1](https://github.com/PeterGora/FrontEndHW/blob/master/CV/CV10.png?raw=true)
 ![Site1](https://github.com/PeterGora/FrontEndHW/blob/master/CV/CV2.png?raw=true)
 ![Site1](https://github.com/PeterGora/FrontEndHW/blob/master/CV/CV3.png?raw=true)
 ![Site1](https://github.com/PeterGora/FrontEndHW/blob/master/CV/CV4.png?raw=true)
