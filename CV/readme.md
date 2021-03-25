@@ -1,6 +1,6 @@
-# Portfolio website template
+# CV  website template
 
-Portfolio template website created to be used for free.
+CV / Portfolio template website.
 #Using:
 html5, sass, css, javascript and RWD.
 
