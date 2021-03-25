@@ -1,6 +1,6 @@
 # University website template
 
-Univeristy template website created as part of my formation using:
+University  website template created using:
 html5, sass, scss, jquery and javascript.
 
 
